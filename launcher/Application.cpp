@@ -1043,7 +1043,13 @@ bool Application::createSetupWizard()
         if (currentHostName != oldHostName)
         {
             settings()->set("LastHostname", currentHostName);
-            return true;
+        }
+        // The GryzMC package supplies a private Java 21 runtime. Resolve it
+        // on each machine instead of asking players to select system Java.
+        QString bundledJava = FS::PathCombine(applicationDirPath(), "runtime/bin/javaw.exe");
+        if (QFileInfo::exists(bundledJava))
+        {
+            settings()->set("JavaPath", bundledJava);
         }
         QString currentJavaPath = settings()->get("JavaPath").toString();
         QString actualPath = FS::ResolveExecutable(currentJavaPath);

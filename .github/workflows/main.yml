@@ -157,16 +157,16 @@ jobs:
            -DCMAKE_C_COMPILER=gcc ^
            -DCMAKE_CXX_COMPILER=g++ ^
            -DCMAKE_BUILD_TYPE=Release ^
-           -DLauncher_NOTIFICATION_URL:STRING=https://files.multimc.org/notifications.json ^
            -DCMAKE_INSTALL_PREFIX:PATH="D:/UltimMC/UltimMC" ^
            -DCMAKE_PREFIX_PATH="D:\Qt\5.6.3\mingw49_32" ^
            -DQt5_DIR="D:\Qt\5.6.3\mingw49_32" ^
-           -DLauncher_UPDATER_BASE=https://files.multimc.org/update/ ^
-           -DLauncher_PASTE_EE_API_KEY:STRING=utLvciUouSURFzfjPxLBf5W4ISsUX4pwBDF7N1AfZ ^
-           -DLauncher_ANALYTICS_ID:STRING=UA-87731965-2 ^
+           -DLauncher_UPDATER_BASE= ^
+           -DLauncher_NOTIFICATION_URL:STRING= ^
+           -DLauncher_PASTE_EE_API_KEY:STRING= ^
+           -DLauncher_ANALYTICS_ID:STRING= ^
            -DLauncher_LAYOUT=win-bundle ^
            -DLauncher_BUILD_PLATFORM=win32 ^
-           -DLauncher_BUG_TRACKER_URL=https://github.com/UltimMC/Launcher/issues ^
+           -DLauncher_BUG_TRACKER_URL=https://github.com/ValeenMar/GryzMC-Launcher/issues ^
            -DLauncher_EMBED_SECRETS=On ^
            -G "MinGW Makefiles" ^
            ..

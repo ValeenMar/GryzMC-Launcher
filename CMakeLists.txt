@@ -120,7 +120,7 @@ option(Launcher_EMBED_SECRETS "Determines whether to embed secrets. Secrets are 
 
 # By using this key in your builds you accept the terms of use laid down in
 # https://docs.microsoft.com/en-us/legal/microsoft-identity-platform/terms-of-use
-set(Launcher_MSA_CLIENT_ID "f4404707-7bbe-4e40-80ba-85fb2bb825a1" CACHE STRING "Client ID you can get from Microsoft Identity Platform when you register an application")
+set(Launcher_MSA_CLIENT_ID "" CACHE STRING "Client ID you can get from Microsoft Identity Platform when you register an application")
 
 #### Check the current Git commit and branch
 include(GetGitRevisionDescription)
